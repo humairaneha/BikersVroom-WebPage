@@ -47,8 +47,8 @@
 </head>
 <body>
     <header class="md:container md:mx-auto">
-        <nav><div class="navbar bg-base-100 font-poppins">
-            <div class="flex-1 ">
+        <nav><div class="navbar bg-base-100 font-poppins flex-wrap gap-4 md:flex-row items-center ">
+            <div class="md:flex-1 ">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -74,11 +74,11 @@
               <a class="btn bg-bike-primary hover:bg-bike-primary  font-bold text-white px-12 py-4">Login</a>
             </div>
           </div></nav>
-          <div class="carousel w-full rounded-lg mt-8 font-poppins bg-slider-primary h-fit border-2">
+          <div class="carousel w-full rounded-lg mt-8 font-poppins bg-slider-primary h-fit ">
             <div id="slide1" class="carousel-item relative w-full">
-                <div class="flex flex-col md:flex-row p-16  md:p-24  h-fit gap-8"> 
-                    <div class="md:w-1/2  space-y-8" >
-                        <h1 class=" text-5xl md:text-7xl font-bold" >Ride-on R15 V4 
+                <div class="flex flex-col lg:flex-row p-16  md:p-24  h-fit gap-8"> 
+                    <div class="lg:w-1/2  space-y-8" >
+                        <h1 class=" text-4xl md:text-7xl font-bold" >Ride-on R15 V4 
                             with Smile</h1>
                         <p class="text-base font-light">Amet minim mollit non deserunt ullamco 
 
@@ -86,7 +86,7 @@
                             duis enim velit mollit</p>
                         <button class="btn bg-bike-primary text-white font-bold px-12 py-4">Purchase</button>
                     </div>
-                    <div class="  md:w-1/2  ">
+                    <div class="  lg:w-1/2  ">
                     <img class=" md:w-8/12 mx-auto  " src="images/slider/bike1.png"  /> </div>
                 </div>
               
@@ -159,18 +159,18 @@
     </header>
     <main class="px-6 md:container md:mx-auto font-poppins">
         <!-- Featured Bike section -->
-     <section class="mt-40 text-center">
+     <section class="md:mt-40 mt-20 text-center">
         <h1 class="text-3xl md:text-5xl font-semibold">Featured Bikes In This Year</h1>
          <p class="text-xs text-bike-primary">Best bike collection</p>
          <hr class="bg-bike-primary h-0.5 w-1/12 mx-auto">
-         <div class="mt-12 flex flex-col md:flex-row gap-8 justify-between px-4 ">
-            <img src="images/others/feature-bike.png" alt="">
-            <img src="images/others/feature-bike.png" alt="">
-            <img src="images/others/feature-bike.png" alt="">
+         <div class="mt-12 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 ">
+            <img class="w-[100%] lg:w-[80%] lg:mx-auto" src="images/others/feature-bike.png" alt="">
+            <img class="w-[100%] lg:w-[80%] lg:mx-auto" src="images/others/feature-bike.png" alt="">
+            <img class="w-[100%] lg:w-[80%] lg:mx-auto" src="images/others/feature-bike.png" alt="">
          </div>
      </section>
      <!-- latest News Section -->
-     <section class="mt-40 text-center">
+     <section class="md:mt-40 text-center mt-20">
         <h1 class="text-3xl md:text-5xl font-semibold" >Latest News</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12  gap-5">
             <div class="card   bg-base-100 shadow-xl px-6 pt-6 rounded-md">
@@ -217,9 +217,9 @@
         
      </section>
      <!-- Happy Client Section -->
-`    <section class="text-center font-poppins mt-40">
+`    <section class="text-center font-poppins md:mt-40 mt-20">
     <h1 class=" text-3xl md:text-6xl font-bold mb-20">Happy <span class=" text-bike-primary ">Clients Says</span></h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around gap-6 md:px-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around gap-6 md:px-10 lg:px-20">
         <div class="card  bg-base-100 border-[2px] border-[#DEDEDE] rounded-md">
             <figure class="px-10 pt-10">
               <img  src="images/others/user-1.png" alt="Shoes" class="w-1/2" />
@@ -299,9 +299,9 @@
 </section>
 
 <!-- Faq section -->
- <section class="text-center font-inter mt-40">
+ <section class="text-center font-inter mt-20 md:mt-40">
     <h1 class="text-3xl md:text-6xl font-bold mb-20">Frequently Asked <span class=" text-bike-primary ">Questions</span></h1>
-    <div class="flex flex-col md:flex-row gap-10">
+    <div class="flex flex-col lg:flex-row gap-10">
         <div class="flex-1  md:h-[26rem]">
             <img src="images/others/faq.png" alt="" class=" mx-auto w-96 md:h-[100%] ">
         </div>
@@ -363,27 +363,28 @@ new one?
     </div>
  </section>
     </main>
-    <footer class="footer w-[100%] px-10 lg:px-40 py-14 bg-[#0B0D17] text-neutral-content mt-40 font-manrope">
+    <footer class="footer w-[100%] px-10 lg:px-40 py-14 bg-[#0B0D17] text-neutral-content mt-20 md:mt-40 font-manrope">
         
         <nav class="flex flex-col gap-5 md:flex-row  w-[100%] justify-between">
-          <div class=" space-y-4">
+          <div class=" space-y-5">
             <span class="block mb-2">
             <a class="" href="">Download Now</a>
             <a class="ml-6" href="">License</a>
            </span>
-           <span class="space-x-4">
+           <div class="flex flex-wrap  gap-4">
             <a href="">About</a>
             <a href="">Features</a>
             <a href="">Pricing</a>
             <a href="">Careers</a>
             <a href="">Help</a>
-            <a href="">Privacy Policy</a> </span>
+            <a class="" href="">Privacy Policy</a> 
+           </div>
             <p>© 2020 bike. All rights reserved</p>
           </div>
           <div class="space-y-3">
            <h2>Get the App</h2>
-            <img class="w-36" src="images/others/android.png" alt="">
-            <img class="w-36"  src="images/others/ios.png" alt="">
+            <a href=""><img class="w-36" src="images/others/android.png" alt=""></a>
+            <a href=""><img class="w-36"  src="images/others/ios.png" alt=""></a>
           </div>
         </nav>
       </footer>
